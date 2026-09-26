@@ -1,0 +1,3 @@
+interface:
+  display_name: "AISBench PD Benchmark"
+  short_description: "Build datasets and run proxy-routed AISBench"

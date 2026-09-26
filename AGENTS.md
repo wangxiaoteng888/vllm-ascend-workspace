@@ -48,6 +48,7 @@ Repo-local skills live under `.agents/skills/`. Each has its own `SKILL.md` with
 | Skill | Purpose |
 |-------|---------|
 | `repo-init` | Initialize workspace: `gh`, GitHub auth, submodules, fork topology |
+| `signed-code-commit` | Commit with wangxiaoteng identity and DCO sign-off; push only to the requested repository and branch |
 | `machine-management` | Add / verify / repair / remove a remote NPU machine |
 | `npu-fleet-monitor` | Deploy, start, inspect, restart, or stop the loopback-only NPU monitoring dashboard from its standalone worktree |
 | `session-management` | Create / inspect / remove / group isolated agent sessions (local worktree + remote container + leases) |
@@ -56,8 +57,10 @@ Repo-local skills live under `.agents/skills/`. Each has its own `SKILL.md` with
 | `modelscope` | Download / resume / status-check / SHA256-verify ModelScope model weights under explicit local directories |
 | `vllm-ascend-serving` | Start / check / stop a vLLM Ascend service on a remote container |
 | `vllm-ascend-benchmark` | Run `vllm bench serve` benchmarks (single-run or multi-run with warmup) |
+| `aisbench-pd-benchmark` | Build tokenizer datasets and run warmup/formal AISBench cases through a vLLM Ascend PD proxy |
 | `ascend-memory-profiling` | Profile HBM memory usage on Ascend NPU for vLLM serving scenarios |
 | `ascend-profiling-collection` | Collect one Ascend torch-profiler case end-to-end (start service, bracket workload with `/start_profile` + `/stop_profile`, run `analyse()`, verify outputs, write manifest) |
+| `pd-decode-profiling` | Prove D-node decode activity, collect a short PD trace, parse per-rank trace views, and package `D_trace_views_only.tar.gz` |
 | `ascend-profiling-analysis` | Analyze collected Ascend torch-profiler roots/manifests and generate reports |
 | `curate-workspace-knowledge` | Explicitly review, deduplicate, promote, merge, reject, or deprecate verified knowledge candidates |
 | `vllm-ascend-graph-debug` | Diagnose Ascend graph compile, capture, replay, and graph/eager correctness divergence |

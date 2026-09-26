@@ -1,0 +1,3 @@
+interface:
+  display_name: "PD Decode Profiling"
+  short_description: "Capture and package D-node decode traces"

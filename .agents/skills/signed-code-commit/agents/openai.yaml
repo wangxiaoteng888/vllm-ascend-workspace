@@ -1,0 +1,4 @@
+interface:
+  display_name: "Signed Code Commit"
+  short_description: "Commit as wangxiaoteng with a verified DCO sign-off"
+  default_prompt: "Use $signed-code-commit to commit the requested changes with my configured identity and DCO sign-off."
