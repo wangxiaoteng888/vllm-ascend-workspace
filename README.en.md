@@ -52,6 +52,7 @@ After deployment, open <http://127.0.0.1:8788>. The dashboard shows NPU/AICore, 
 | **vllm-ascend-serving** | Launch a vLLM Ascend inference service on a remote container, with NPU probing, auto card selection, and incremental restart | When you need an inference service on a remote machine |
 | **vllm-ascend-benchmark** | Run `vllm bench serve` performance benchmarks on a remote container, with multi-run warmup and statistical aggregation | When you need throughput/latency benchmarks or performance regression checks |
 | **ascend-memory-profiling** | Profile and attribute HBM memory usage on Ascend NPU, with per-component breakdown and evidence chains | When you need to analyze memory consumption of a vLLM serving workload |
+| **vllm-host-memory-leak** | Diagnose host RAM growth using USS/PSS/RSS, passive notification counters and BCC allocation stacks | When EngineCore/Worker RAM grows and you need to distinguish leaks, allocator retention and notification backlog |
 | **ascend-profiling-collection** | Collect Ascend torch-profiler data: start service, bracket profile window, run workload, remote analyse, and write a manifest | When you need kernel_details/trace_view captures |
 | **ascend-profiling-analysis** | Analyze collected profiler roots/manifests and generate step/layer/operator/cross-rank reports | When you need to analyze profiling output |
 | **curate-workspace-knowledge** | Review, deduplicate, promote, merge, reject, or deprecate verified project knowledge candidates | When explicitly curating or maintaining project knowledge |

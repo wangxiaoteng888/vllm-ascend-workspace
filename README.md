@@ -52,6 +52,7 @@ python3 .agents/skills/npu-fleet-monitor/scripts/manage_monitor.py ensure
 | **vllm-ascend-serving**  | 在远程容器上一键拉起 vLLM Ascend 推理服务，支持 NPU 探测、自动选卡、增量重启 | 需要在远程机器上起推理服务时     |
 | **vllm-ascend-benchmark** | 在远程容器上运行 `vllm bench serve` 性能基准测试，支持多轮预热和统计聚合     | 需要跑吞吐/延迟基准测试或性能回归对比时 |
 | **ascend-memory-profiling** | 采集并分析昇腾 NPU 的 HBM 显存占用，按组件拆分并溯源 | 需要分析 vLLM 推理服务的显存占用时 |
+| **vllm-host-memory-leak** | 结合 USS/PSS/RSS、被动通知计数和 BCC 分配栈定位主机内存增长 | EngineCore/Worker 的 RAM 持续增长，需要区分泄漏、分配器保留和通知积压时 |
 | **ascend-profiling-collection** | 采集 Ascend torch profiler：起服务、控制 profile 窗口、运行 workload、远端 analyse 并写 manifest | 需要采集 kernel_details/trace_view 时 |
 | **ascend-profiling-analysis** | 分析已采集的 profiler root/manifest，生成 step/layer/operator/cross-rank 诊断报告 | 需要分析 profiling 结果或生成报告时 |
 | **curate-workspace-knowledge** | 审核、去重、提升、合并、拒绝或废弃已验证的项目知识候选 | 显式要求沉淀、整理或维护项目知识时 |

@@ -59,6 +59,7 @@ Repo-local skills live under `.agents/skills/`. Each has its own `SKILL.md` with
 | `vllm-ascend-benchmark` | Run `vllm bench serve` benchmarks (single-run or multi-run with warmup) |
 | `aisbench-pd-benchmark` | Build tokenizer datasets and run warmup/formal AISBench cases through a vLLM Ascend PD proxy |
 | `ascend-memory-profiling` | Profile HBM memory usage on Ascend NPU for vLLM serving scenarios |
+| `vllm-host-memory-leak` | Diagnose host RAM growth using process identity, USS/PSS/RSS, passive notification counters and validated BCC allocation traces |
 | `ascend-profiling-collection` | Collect one Ascend torch-profiler case end-to-end (start service, bracket workload with `/start_profile` + `/stop_profile`, run `analyse()`, verify outputs, write manifest) |
 | `pd-decode-profiling` | Prove D-node decode activity, collect a short PD trace, parse per-rank trace views, and package `D_trace_views_only.tar.gz` |
 | `ascend-profiling-analysis` | Analyze collected Ascend torch-profiler roots/manifests and generate reports |

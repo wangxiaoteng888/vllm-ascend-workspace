@@ -1,0 +1,4 @@
+interface:
+  display_name: "vLLM 主机内存泄漏定位"
+  short_description: "结合 USS、被动队列计数和 BCC 分配栈定位主机内存增长"
+  default_prompt: "使用 $vllm-host-memory-leak 检查指定服务的内存增长，验证监控新鲜度，并用 BCC 和源码建立可核验的归因证据。"

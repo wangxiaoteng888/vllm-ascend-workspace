@@ -1,0 +1,16 @@
+vllm-host-memory-leak
+
+Maintained by wangxiaoteng (GitHub: wangxiaoteng888).
+The original diagnostic workflow, references and helpers are distributed under
+the workspace MIT license; see LICENSE. Preserve its Qi Mao copyright notice.
+
+scripts/smem/smem is a separately licensed, user-supplied smem distribution:
+Copyright 2008-2009 Matt Mackall <mpm@selenic.com>.
+GNU General Public License version 2 or later (GPL-2.0-or-later).
+Its original copyright/license header and the full GPL v2 text in
+scripts/smem/COPYING are retained. The MIT notice does not relicense smem.
+The supplied smem variant has no functional changes; only checkout line endings
+are normalized. Its exact upstream revision is not recorded. This repository commit pins the distributed bytes.
+
+BCC is an external system dependency and is not bundled. Record the version and
+hash of the installed BCC tools when collecting evidence.
